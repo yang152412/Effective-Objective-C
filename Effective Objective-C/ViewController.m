@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <objc/runtime.h>
+#import "EOCAutoDictionary.h"
+
 @interface ViewController ()<UIAlertViewDelegate>
 
 @end
@@ -18,8 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self askUserAQuestion];
-    [self askUserBQuestion];
+    [self testMessageForwarding];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,6 +31,11 @@
 }
 
 #pragma mark - 关联对象
+- (void)testAssociatedObject {
+    [self askUserAQuestion];
+    [self askUserBQuestion];
+}
+
 static void *EOCMyAlertViewKey = "EOCMyalertViewKey";
 - (void)askUserAQuestion {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Question A" message:@"What do you want to do?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Continue", nil];
@@ -69,6 +76,11 @@ static void *EOCMyAlertViewKey = "EOCMyalertViewKey";
 
 - (void)doContinue:(NSString *)str { NSLog(@"doContinue   %@",str); }
 
-
+#pragma mark - Message Forwarding
+- (void)testMessageForwarding {
+    EOCAutoDictionary *dict = [EOCAutoDictionary new];
+    dict.date = [NSDate dateWithTimeIntervalSince1970:475372800];
+    NSLog(@"dict.date = %@",dict.date);
+}
 
 @end

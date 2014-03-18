@@ -22,6 +22,7 @@
 		AC570A3418D8462E0034E130 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC570A3218D8462E0034E130 /* InfoPlist.strings */; };
 		AC570A3618D8462E0034E130 /* Effective_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC570A3518D8462E0034E130 /* Effective_Objective_CTests.m */; };
 		AC570A4118D846C70034E130 /* MsgSend.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC570A4018D846C70034E130 /* MsgSend.mm */; };
+		AC570A4718D862950034E130 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AC570A4618D862950034E130 /* EOCAutoDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		AC570A3518D8462E0034E130 /* Effective_Objective_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Effective_Objective_CTests.m; sourceTree = "<group>"; };
 		AC570A3F18D846C70034E130 /* MsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgSend.h; sourceTree = "<group>"; };
 		AC570A4018D846C70034E130 /* MsgSend.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MsgSend.mm; sourceTree = "<group>"; };
+		AC570A4518D862950034E130 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
+		AC570A4618D862950034E130 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				AC570A2018D8462E0034E130 /* ViewController.m */,
 				AC570A3F18D846C70034E130 /* MsgSend.h */,
 				AC570A4018D846C70034E130 /* MsgSend.mm */,
+				AC570A4518D862950034E130 /* EOCAutoDictionary.h */,
+				AC570A4618D862950034E130 /* EOCAutoDictionary.m */,
 				AC570A2218D8462E0034E130 /* Images.xcassets */,
 				AC570A1118D8462E0034E130 /* Supporting Files */,
 			);
@@ -257,6 +262,7 @@
 				AC570A2118D8462E0034E130 /* ViewController.m in Sources */,
 				AC570A4118D846C70034E130 /* MsgSend.mm in Sources */,
 				AC570A1B18D8462E0034E130 /* AppDelegate.m in Sources */,
+				AC570A4718D862950034E130 /* EOCAutoDictionary.m in Sources */,
 				AC570A1718D8462E0034E130 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 				AC570A3B18D8462E0034E130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC570A3C18D8462E0034E130 /* Build configuration list for PBXNativeTarget "Effective Objective-CTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				AC570A3E18D8462E0034E130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
